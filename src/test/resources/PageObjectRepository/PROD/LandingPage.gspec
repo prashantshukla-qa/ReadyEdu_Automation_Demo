@@ -10,7 +10,7 @@
 	link_middle_east_campuses_login       xpath                   //a[text()= "Middle East Campuses"]
     covid19_banner                        css                     div.leadinModal-content
     button_covid19_banner_close           css                     button.leadinModal-close
-	img_heroimage						  css					  img.hero-image	
+	img_heroimage						  css					  img.hero-image
 
 = Main section =
     @on *
