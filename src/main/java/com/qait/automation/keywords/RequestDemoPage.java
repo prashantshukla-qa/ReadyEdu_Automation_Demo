@@ -27,7 +27,7 @@ public class RequestDemoPage extends GetPage {
         }
     }
 
-    public void fillInFOrmDetails(Map<String, Object> formFields){
+    public void fillInFormDetails(Map<String, Object> formFields){
         for (String fieldname : formFields.keySet()) {
             element("input_fields", fieldname).sendKeys(formFields.get(fieldname).toString());
         }

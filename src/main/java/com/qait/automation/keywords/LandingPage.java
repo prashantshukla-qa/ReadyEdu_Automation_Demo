@@ -17,9 +17,9 @@ public class LandingPage extends GetPage {
 				|| getProperty("./Config.properties", "browser").equalsIgnoreCase("android")) {
 			this.driver.get("https://campuscloud.readyeducation.com/#/login?goTo=%252Fdashboard");
 		} else {
+			wait.waitForMsgToastToDisappear();
 			element("link_signin").click();
 			String campus = "link_us_login".replace("_us", "_" + campusName.toLowerCase().replace(" ", "_"));
-			System.out.println(campus);
 			element(campus).click();
 		}
 		logMessage("info", "Opened " + campusName + " Cloud Login Page");

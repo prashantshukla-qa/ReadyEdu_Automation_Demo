@@ -39,7 +39,7 @@ public class ReadyEducationRequestForDemoTest {
     public void test_form_fields_and_error_messages(){
         test.requestDemoPage.submitform();
         test.requestDemoPage.verifyErrorMessages(getYamlValues("request_demo.form_entries"), getYamlValue("request_demo.form_field_error_msg"));
-        test.requestDemoPage.fillInFOrmDetails(getYamlValues("request_demo.form_entries"));
+        test.requestDemoPage.fillInFormDetails(getYamlValues("request_demo.form_entries"));
     }
 
     @AfterMethod

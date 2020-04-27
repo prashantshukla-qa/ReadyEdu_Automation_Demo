@@ -83,7 +83,7 @@ public class SeleniumWait{
         int i = 0;
         resetImplicitTimeout(1);
         try {
-            while (driver.findElement(By.className("toast-message")).isDisplayed() && i <= timeout) {
+            while (driver.findElement(By.cssSelector("div.div.leadinModal-preview")).isDisplayed() && i <= timeout) {
                 hardWait(1);                
                 i++;
             }
