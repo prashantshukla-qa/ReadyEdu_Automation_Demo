@@ -47,4 +47,9 @@ public class ReadyEducationRequestForDemoTest {
         test.takescreenshot.takeScreenShotOnException(result);
     }
 
+    @AfterClass
+    public void tearDown(){
+        test.closeBrowserSession();
+    }
+
 }

@@ -7,7 +7,6 @@ import com.qait.automation.TestSessionInitiator;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -54,6 +53,6 @@ public class ReadyEducationLoginTest {
 
     @AfterClass
     public void testEnd() {
-       // test.closeTestSession();
+        test.closeTestSession();
     }
 }
