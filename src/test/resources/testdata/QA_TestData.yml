@@ -1,0 +1,23 @@
+base_url: https://www.readyeducation.com/en-ca/
+
+credentials:
+  username: test_user@qainfotech.com
+  password: test_password
+  error_message:
+    text: Please check your credentials and try again.
+
+recovery:
+  email: prashantshukla@qainfotech.com
+  error_message:
+    text: There is no user with that login information.
+
+request_demo:
+  form_heading: Fill out the form below to learn how Ready Education can impact your campus
+  form_field_error_msg: Please complete this required field.
+  form_entries:
+    firstname: prashant
+    lastname: Shukla
+    company: qainfotech
+    jobtitle: QA Manager
+    email: prashantshukla@qainfotech.com
+    phone: 555-0199

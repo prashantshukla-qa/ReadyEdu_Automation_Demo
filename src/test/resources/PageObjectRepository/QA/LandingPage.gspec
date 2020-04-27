@@ -1,0 +1,12 @@
+#Title: Landing Page
+@objects
+    link_signin                           xpath                   .//li/a[text()="Sign In"]
+    button_req_demo                       xpath                   .//a[text()='Request a Demo']
+    link_us_campus_login                  xpath                   .//a[text()= "${campusname}"]
+    covid19_banner                        css                     div.leadinModal-content
+    button_covid19_banner_close           css                     button.leadinModal-close
+
+= Main section =
+    @on *
+        link_signin:
+            left-of button_req_demo

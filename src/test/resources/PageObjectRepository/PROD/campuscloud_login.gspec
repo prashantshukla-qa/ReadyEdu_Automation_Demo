@@ -1,0 +1,14 @@
+#Title: Campus Cloud Login
+================================================================
+@objects
+#elementName:                           locatorType:                locatorvalue
+    input_username                      css                         input#username
+    input_password                      css                         input#password
+    button_login                        xpath                       .//button[contains(text(), "Login")]
+    text_login_error                    css                         p.cpalert-danger
+    link_reset_password                 xpath                       //a[contains(text(), 'Lost your password?')]
+
+= Main section =
+    @on *
+        link_signin:
+            left-of button_req_demo

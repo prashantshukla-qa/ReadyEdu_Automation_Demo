@@ -1,0 +1,20 @@
+#Title: Landing Page
+================================================================
+@objects
+#elementName:			                  locatorType:			  locatorvalue
+    link_signin                           xpath                   //li/a[text()="Sign In"]
+    button_req_demo                       xpath                   //a[text()='Request a Demo']
+    link_us_campuses_login                xpath                   //a[text()= "US Campuses"]
+	link_canadian_campuses_login          xpath                   //a[text()= "Canadian Campuses"]
+	link_eu_campuses_login            	  xpath                   //a[text()= "EU Campuses"]
+	link_middle_east_campuses_login       xpath                   //a[text()= "Middle East Campuses"]
+    covid19_banner                        css                     div.leadinModal-content
+    button_covid19_banner_close           css                     button.leadinModal-close
+	img_heroimage						  css					  img.hero-image	
+
+= Main section =
+    @on *
+        link_signin:
+            left-of button_req_demo
+		img_heroimage:
+			below link_signin 10 to 50 px

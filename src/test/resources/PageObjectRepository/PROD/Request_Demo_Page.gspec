@@ -1,0 +1,14 @@
+#Title: Ready Education | Request a Demo
+================================================================
+@objects
+#elementName:                           locatorType:                locatorvalue
+    input_fields                        css                         input[name="${name}"]
+    button_submit                       css                         input.hs-button.primary.large
+    text_error_msg                      css                         label.hs-error-msg[data-reactid*="${name}"]
+    text_form_heading                   css                         div.inner > p
+
+
+= Main section =
+    @on *
+        button_submit:
+            below text_form_heading
