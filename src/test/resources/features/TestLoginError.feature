@@ -1,7 +1,7 @@
 Feature: Test error message on login page
 
     @login-page-test @smoke-test
-    Scenario: I see error message on entring wrong credentials
+    Scenario: I see error message on entering wrong credentials
         Given I am on "US Campuses" login page
         When I try to login using "username" and "password"
         Then Application throws login error message
